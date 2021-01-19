@@ -26,3 +26,8 @@ const updateImage = index => {
     img.src = currentFrame(index);
     context.drawImage(img, 0, 0);
   }
+
+  window.addEventListener('scroll', () => {  
+    const scrollTop = html.scrollTop;
+    const maxScrollTop = html.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScrollTop;
