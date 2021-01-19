@@ -21,3 +21,8 @@ canvas.height=770;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
+
+const updateImage = index => {
+    img.src = currentFrame(index);
+    context.drawImage(img, 0, 0);
+  }
