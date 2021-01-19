@@ -14,3 +14,10 @@ const preloadImages = () => {
   }
 };
 
+const img = new Image()
+img.src = currentFrame(1);
+canvas.width=1158;
+canvas.height=770;
+img.onload=function(){
+  context.drawImage(img, 0, 0);
+}
